@@ -92,3 +92,9 @@
 (def-package! git-link
   :commands (git-link git-link-commit git-link-homepage))
 
+
+(def-package! evil-magit
+  :when (featurep! :feature evil)
+  :after magit
+  :init (setq evil-magit-want-horizontal-movement t))
+
