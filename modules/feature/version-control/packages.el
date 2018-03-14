@@ -5,12 +5,13 @@
 ;; n/a
 
 ;;; +git
-(unless (featurep! -git)
-  (package! git-gutter-fringe)
-  (package! git-link)
-  (package! git-timemachine)
-  (package! gitconfig-mode)
-  (package! gitignore-mode)
-  (package! magit))
+(package! git-gutter-fringe)
+(package! git-link)
+(package! git-timemachine)
+(package! gitconfig-mode)
+(package! gitignore-mode)
+(package! magit)
+(when (featurep! :feature evil)
+  (package! evil-magit))
 
 ;;; TODO +hg
