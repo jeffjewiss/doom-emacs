@@ -7,6 +7,7 @@
   :mode "\\.jsp$"
   :mode "\\.as[cp]x$"
   :mode "\\.mustache$"
+  :mode "\\.hbs$"
   :mode "\\.tsx$"
   :mode "\\.vue$"
   :mode "wp-content/themes/.+/.+\\.php$"
